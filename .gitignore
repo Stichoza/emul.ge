@@ -1,4 +1,5 @@
 /vendor
+/public/lib
 /bootstrap/compiled.php
 .env.*.php
 .env.php
