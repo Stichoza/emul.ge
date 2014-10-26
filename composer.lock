@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b200235a93a73fcb828571296156d231",
+    "hash": "fa8e5471d24523f50bdc02864e4bddb5",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -208,6 +208,52 @@
                 "parser"
             ],
             "time": "2014-09-09 13:34:57"
+        },
+        {
+            "name": "illuminate/html",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/html.git",
+                "reference": "b04be9a84be0d6f7552b281ad6b9e2795218fe56"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/html/zipball/b04be9a84be0d6f7552b281ad6b9e2795218fe56",
+                "reference": "b04be9a84be0d6f7552b281ad6b9e2795218fe56",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "~5.0",
+                "illuminate/session": "~5.0",
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Html\\": ""
+                },
+                "files": [
+                    "helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "time": "2014-10-16 14:38:30"
         },
         {
             "name": "ircmaxell/password-compat",
@@ -2495,7 +2541,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "illuminate/html": 20
+    },
     "prefer-stable": false,
     "platform": [],
     "platform-dev": []

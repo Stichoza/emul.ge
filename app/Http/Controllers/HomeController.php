@@ -20,7 +20,6 @@ class HomeController extends Controller {
 	 */
 	public function index()
 	{
-		return [];
 		return view('hello');
 	}
 

@@ -1,19 +1,31 @@
-var elixir = require('laravel-elixir');
-
-/*
- |----------------------------------------------------------------
- | Have a Drink!
- |----------------------------------------------------------------
- |
- | Elixir provides a clean, fluent API for defining some basic
- | Gulp tasks for your Laravel application. Elixir supports
- | several common CSS, JavaScript and even testing tools!
- |
- */
+var elixir = require('laravel-elixir')
+	gulp = require('gulp'),
+	sass = require('gulp-ruby-sass'),
+	autoprefixer = require('gulp-autoprefixer'),
+	minifycss = require('gulp-minify-css'),
+	rename = require('gulp-rename');
 
 elixir(function(mix) {
-    mix.sass("bootstrap.scss")
-       .routes()
-       .events()
-       .phpUnit();
+	mix.sass("style.sass")
+		.routes()
+		.events()
+		.phpUnit();
+});
+
+gulp.task('styles', function() {
+	return gulp.src('resources/assets/sass/*.sass')
+		.pipe(sass({ style: 'expanded' }))
+		.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
+		.pipe(gulp.dest('public/css/dist'))
+		.pipe(rename({suffix: '.min'}))
+		.pipe(minifycss())
+		.pipe(gulp.dest('public/css/dist'));
+});
+
+gulp.task('watch', function() {
+	gulp.watch('resources/assets/sass/*', ['styles']);
+});
+
+gulp.task('default', ['watch'], function() {
+
 });
