@@ -13,7 +13,7 @@
 		<!-- Bootstrap core CSS -->
 		<link href="{{ asset('lib/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
 		<link href="{{ asset('lib/fontawesome/css/font-awesome.min.css') }}" rel="stylesheet">
-		<link href="{{ asset('lib_persist/bootswatch/lumen.min.css') }}" rel="stylesheet">
+		<link href="{{ asset('lib_persist/bootswatch/paper.min.css') }}" rel="stylesheet">
 
 		<!-- Custom styles for this template -->
 		<link href="{{ asset('css/dist/style.min.css') }}" rel="stylesheet">
@@ -28,7 +28,7 @@
 	<body>
 
 		<!-- Fixed navbar -->
-		<div class="navbar navbar-static-top navbar-default" role="navigation">
+		<div class="navbar navbar-static-top navbar-inverse" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -63,25 +63,28 @@
 		<!-- Begin page content -->
 		<div class="container">
 			
-			<h3 class="text-center">შეიყვანეთ ემულგატორები</h3>
+			<h2 class="text-center">შეიყვანეთ ემულგატორები</h2>
 
-			<p>ლორემ იპსიუმ</p>
+			<form action="" class="bs-component">
+				<div class="row">
 
-			<div class="row">
+					<div class="col-sm-8 col-sm-offset-1">
+							<div class="form-group">
+								<input class="form-control input-lg" type="text" id="emulsifiers" name="emulsifiers" placeholder="E">
+							</div>
+					</div>
 
-				<div class="col-sm-8 col-sm-offset-2">
-					<form action="" class="bs-component">
-						<div class="form-group">
-							<input class="form-control input-lg" type="text" id="emulsifiers" name="emulsifiers" placeholder="E">
-						</div>
-					</form>
+					<div class="col-sm-2">
+						<button id="emulsifier-submit" type="sutmit" class="btn btn-block btn-lg btn-primary"><i class="fa fa-flask"></i></button>
+					</div>
+
 				</div>
-			</div>
+			</form>
 
 		</div>
 		<div class="container">
 			
-			<h5 class="text-center">რეზულტატი</h5>
+			<h3 class="text-center">რეზულტატი</h3>
 
 			<div class="row">
 				<div class="col-sm-4">
@@ -106,5 +109,6 @@
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="{{ asset('lib/jquery/dist/jquery.min.js') }}"></script>
 		<script src="{{ asset('lib/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+		<script src="{{ asset('js/dist/main.min.js') }}"></script>
 	</body>
 </html>
