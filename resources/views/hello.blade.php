@@ -71,7 +71,7 @@
 
 					<div class="col-xs-10 col-sm-9 col-md-8 col-md-offset-1">
 							<div class="form-group">
-								<input autofocus autocomplete="off" data-role="tagsinput" class="form-control input-lg" type="text" id="emulsifiers" name="emulsifiers" placeholder="">
+								<input autofocus autocomplete="off" class="form-control input-lg" type="text" id="emulsifiers" name="emulsifiers" placeholder="">
 							</div>
 					</div>
 
@@ -83,7 +83,13 @@
 			</form>
 
 		</div>
-		<div class="container">
+
+		<div class="container" id="loading-results">
+			<h3>მოითმინეთ ცოტა ხანს</h3>
+			<img src="{{ asset('images/flask.svg') }}" alt="Loading..." width="240">
+		</div>
+
+		<div class="container" id="results">
 			
 			<h3 class="text-center">რეზულტატი</h3>
 
@@ -110,6 +116,7 @@
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="{{ asset('lib/jquery/dist/jquery.min.js') }}"></script>
 		<script src="{{ asset('lib/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+		<script src="{{ asset('lib/typeahead.js/dist/typeahead.jquery.min.js') }}"></script>
 		<script src="{{ asset('lib/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js') }}"></script>
 		<script src="{{ asset('js/dist/main.min.js') }}"></script>
 	</body>

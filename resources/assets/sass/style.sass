@@ -29,9 +29,7 @@ h1, h2, h3, h4, h5, h6, .btn, .form-control, .navbar-nav > li > a
 .bootstrap-tagsinput
 	border-width: 2px
 	box-shadow: none
-	//height: 64px
 	padding: 18px 27px
-	font-size: 19px
 	line-height: 1.33
 	border-radius: 6px
 	display: block
@@ -39,14 +37,32 @@ h1, h2, h3, h4, h5, h6, .btn, .form-control, .navbar-nav > li > a
 	color: #2c3e50
 	background-color: #ffffff
 	background-image: none
-	border: 1px solid #dce4ec
+	border: 2px solid #dce4ec
 	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
 	overflow: hidden
-	.tag
+	&.active
+		border-color: #2c3e50
+		outline: 0
+	.tag, & > input
 		@extend .font-helvetica
-		font-weight: 200
-		//text-transform: uppercase
-	& > input
+		font-weight: 100
+		font-size: 19px
+		text-transform: uppercase
+	.tag > span:after
+		content: 'x'
+		font-size: 12px
+		vertical-align: middle
+	.tag > span:hover
+		box-shadow: none !important
 
+#emulsifier-submit
+	border-width: 2px
+
+#loading-results
+	text-align: center
+	img
+		padding: 80px
+		border-radius: 50%
+		background-color: $flat-wet-asphalt
 
 

@@ -4,6 +4,7 @@
     "jquery": "~2.1.1",
     "bootstrap": "~3.2.0",
     "fontawesome": "~4.2.0",
-    "bootstrap-tagsinput": "timschlechter/bootstrap-tagsinput#~0.4.2"
+    "bootstrap-tagsinput": "timschlechter/bootstrap-tagsinput#~0.4.2",
+    "typeahead.js": "~0.10.5"
   }
 }
