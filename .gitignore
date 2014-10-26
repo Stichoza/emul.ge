@@ -2,6 +2,7 @@
 /node_modules
 /public/lib
 /public/css/dist
+/public/js/dist
 /.sass-cache
 /bootstrap/compiled.php
 .env.*.php

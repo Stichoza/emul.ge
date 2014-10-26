@@ -1,17 +1,52 @@
+@import "flatuicolors"
+
 @import "../../fonts/stylesheet.css"
 
-#emulsifiers, #emulsifier-submit
-	font-size: 48px
-	height: 72px
+.font-mkhedruli
+	font-family: "bpg_nino_mkhedruli_bookRg", "Helvetica Neue", "Helvetica", sans-serif
 
-#emulsifiers, #emulsifier-submit
-	font-size: 38px
-	height: 72px
+.font-mtavruli
+	font-family: "bpg_nino_mtavruli_bookregular", "Helvetica Neue", "Helvetica", sans-serif
+
+.font-helvetica
+	font-family: "Helvetica Neue", "Helvetica", sans-serif
 
 body
-	//font-family: "bpg_nino_mkhedruli_bookRg", "Helvetica Neue", "Helvetica", sans-serif
-	//background: linear-gradient(#52EDC7, #5AC8FB)
+	@extend .font-mkhedruli
+	background: $flat-clouds
+
+.navbar
+	background: linear-gradient()
+
+h1, h2, h3, h4, h5, h6, .btn, .form-control, .navbar-nav > li > a
+	@extend .font-mtavruli
+	text-transform: uppercase
+
+.navbar-brand
+	font-family: "Helvetica Neue", "Helvetica", sans-serif
+	font-weight: 100
+
+.bootstrap-tagsinput
+	border-width: 2px
+	box-shadow: none
+	//height: 64px
+	padding: 18px 27px
+	font-size: 19px
+	line-height: 1.33
+	border-radius: 6px
+	display: block
+	width: 100%
+	color: #2c3e50
+	background-color: #ffffff
+	background-image: none
+	border: 1px solid #dce4ec
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+	overflow: hidden
+	.tag
+		@extend .font-helvetica
+		font-weight: 200
+		//text-transform: uppercase
+	& > input
 
 
-body, h1, h2, h3, h4, h5, h6, .btn
-	//font-family: "bpg_nino_mtavruliregular", "Helvetica Neue", "Helvetica", sans-serif
+
