@@ -13,10 +13,10 @@
 		<!-- Bootstrap core CSS -->
 		<link href="{{ asset('lib/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
 		<link href="{{ asset('lib/fontawesome/css/font-awesome.min.css') }}" rel="stylesheet">
-		<link href="{{ asset('lib_persist/bootswatch/paper.min.css') }}" rel="stylesheet">
+		<link href="{{ asset('lib_persist/bootswatch/lumen.min.css') }}" rel="stylesheet">
 
 		<!-- Custom styles for this template -->
-		<link href="{{ asset('css/style.min.css') }}" rel="stylesheet">
+		<link href="{{ asset('css/dist/style.min.css') }}" rel="stylesheet">
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -28,7 +28,7 @@
 	<body>
 
 		<!-- Fixed navbar -->
-		<div class="hidden navbar navbar-static-top navbar-default" role="navigation">
+		<div class="navbar navbar-static-top navbar-default" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -41,9 +41,8 @@
 				</div>
 				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#contact">Contact</a></li>
+						<li><a href="#about">ინფორმაცია</a></li>
+						<li><a href="#contact">პასუხისმგებლობა</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
@@ -65,6 +64,8 @@
 		<div class="container">
 			
 			<h3 class="text-center">შეიყვანეთ ემულგატორები</h3>
+
+			<p>ლორემ იპსიუმ</p>
 
 			<div class="row">
 
