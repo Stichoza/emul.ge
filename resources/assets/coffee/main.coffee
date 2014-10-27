@@ -1,11 +1,7 @@
-reloadResults = (event) =>
-	$.getJSON '.', (data) ->
-		console.log data
-
-# Update hash with entered data
-makeHash = () ->
-	window.location.hash = $ '#emulsifiers'
-		.val()
+reloadResults  = (event) -> $.getJSON '.', (data) -> console.log data   # 
+window.getHash = ()      -> window.location.hash.substr(3)              # get hash without "#!"
+window.setHash = (hash)  -> window.location.hash = "!/#{hash}"          # set hash
+updateHash     = ()      -> window.setHash $('#emulsifiers').val()      # Update hash with entered data
 
 # Init tagsinput
 $ '#emulsifiers'
@@ -20,9 +16,9 @@ $ '#emulsifiers'
 				'E' + item
 
 # Add initial data from hash
-for emulsifier of window.location.hash.substr(1).split(',')
+for emulsifier of window.getHash().split(',')
 	$ '#emulsifiers'
-		.tagsinput 'add', window.location.hash.substr(1).split(',')[emulsifier]
+		.tagsinput 'add', window.getHash().split(',')[emulsifier]
 
 # Initial focus
 $ '#emulsifiers'
@@ -31,8 +27,8 @@ $ '#emulsifiers'
 # Update hash on tag change
 $ '#emulsifiers'
 	.on 'itemAdded itemRemoved', (event) =>
-		reloadResults event
-		makeHash()
+		reloadResults event # TODO: maybe just on submit
+		updateHash yes
 
 # Simulate focus/blur on outer container
 $ document

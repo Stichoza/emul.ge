@@ -63,9 +63,7 @@
 
 		<!-- Begin page content -->
 		<div class="container">
-			
 			<h2 class="text-center"></h2>
-
 			<form action="" class="bs-component" id="emulsifier-form">
 				<div class="row">
 
@@ -81,7 +79,6 @@
 
 				</div>
 			</form>
-
 		</div>
 
 		<div class="container" id="start-hint">
@@ -96,14 +93,17 @@
 		<div class="container" id="loading-results">
 			<h3>მოითმინეთ ცოტა ხანს</h3>
 			<div class="round-flask">
-				<img src="{{ asset('images/flask.svg') }}" alt="Loading...">
+				<img src="{{ asset('images/flask-blank.svg') }}" alt="Loading...">
+				<div class="flask-bubbles">
+					<div class="flask-bubble-1"></div>
+					<div class="flask-bubble-2"></div>
+				</div>
+				<img src="{{ asset('images/flask-content.svg') }}" alt="">
 			</div>
 		</div>
 
 		<div class="container" id="results">
-			
 			<h3 class="text-center">რეზულტატი</h3>
-
 			<div class="row">
 				<div class="col-sm-4">
 					<h4 class="text-center">ჯანმრთელობა</h4>
@@ -121,8 +121,27 @@
 					<div class="alert alert-warning" role="alert">Hee</div>
 				</div>
 			</div>
-
 		</div>
+
+		<footer>
+			<div class="container">
+				<div class="row small">
+					<div class="col-xs-4">
+						<p class="text-left text-muted font-mtavruli">&copy; 2014 &middot; საავტორო უფლებები დაცულია</p>
+					</div>
+					<div class="col-xs-4">
+						<ul class="list-unstyled list-inline text-center text-muted font-mtavruli">
+							<li><a href="#">მოხმარების წესები</a></li>
+							<li><a href="#">მოხმარების წესები</a></li>
+							<li><a href="#">მოხმარების წესები</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-4">
+						<p class="text-right text-muted font-helvetica font-thin">Developed by <a href="https://stichoza.com">Stichoza</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
 
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="{{ asset('lib/jquery/dist/jquery.min.js') }}"></script>

@@ -45,6 +45,6 @@ gulp.task('watch', function() {
 	gulp.watch('resources/assets/coffee/*', ['scripts'])
 });
 
-gulp.task('default', ['watch'], function() {})
 
 gulp.task('build', ['scripts', 'styles'], function() {})
+gulp.task('default', ['build', 'watch'], function() {})
