@@ -66,7 +66,7 @@
 			
 			<h2 class="text-center"></h2>
 
-			<form action="" class="bs-component">
+			<form action="" class="bs-component" id="emulsifier-form">
 				<div class="row">
 
 					<div class="col-xs-10 col-sm-9 col-md-8 col-md-offset-1">
@@ -84,9 +84,20 @@
 
 		</div>
 
+		<div class="container" id="start-hint">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<h3 class="text-center">ჩაწერეთ იმ <strong>ემულგატორების</strong> ნომრები, რომლებიც აწერია პროდუქტს, რომლის შემოწმებაც გსურთ</h3>
+					<h4 class="text-center">შემდეგ კი ნაზად დააჭირეთ ენთერს</h4>
+				</div>
+			</div>
+		</div>
+
 		<div class="container" id="loading-results">
 			<h3>მოითმინეთ ცოტა ხანს</h3>
-			<img src="{{ asset('images/flask.svg') }}" alt="Loading..." width="240">
+			<div class="round-flask">
+				<img src="{{ asset('images/flask.svg') }}" alt="Loading...">
+			</div>
 		</div>
 
 		<div class="container" id="results">
