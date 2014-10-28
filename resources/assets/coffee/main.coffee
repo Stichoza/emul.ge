@@ -26,18 +26,22 @@ $ '#emulsifiers'
 
 # Update hash on tag change
 $ '#emulsifiers'
-	.on 'beforeItemAdd', (event) -> # TODO make this change item
+	.on 'beforeItemAdd', (event) ->
 		console.log "Received #{event.item}"
-		if event.item.charAt(0) is 'e' or event.item.charAt(0) is 'E'
-			event.item = event.item.substr(1)
-		if /(E|e)?([\d]{3,4})([a-z])?/.test event.item
+		if event.item.charAt(0) == 'e' or event.item.charAt(0) == 'E'
+			event.item = event.item.substr(1)  # TODO make this change item
+		if /^(E|e)?([\d]{3,4})([a-z])?$/.test event.item
 			console.log "Adding #{event.item}"
 		else
 			event.cancel = yes
 			console.log "Rejected #{event.item}"
+			_item = event.item
+			setTimeout =>
+				$(@).parent().find('.bootstrap-tagsinput input').val _item
+			, 2
 	.on 'itemAdded itemRemoved', (event) =>
 		console.log "Added #{event.item}"
-		reloadResults event # TODO: maybe just on submit
+		reloadResults event # TODO maybe just on submit
 		updateHash yes
 
 # Simulate focus/blur on outer container
