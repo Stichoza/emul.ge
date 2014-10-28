@@ -58,6 +58,8 @@ h1, h2, h3, h4, h5, h6, .btn, .form-control, .navbar-nav > li > a
 
 #emulsifier-submit
 	border-width: 2px
+	padding-left: 0
+	padding-right: 0
 
 #loading-results
 	text-align: center
@@ -99,7 +101,7 @@ h1, h2, h3, h4, h5, h6, .btn, .form-control, .navbar-nav > li > a
 				left: 88px
 
 // Sticky footer
-$footer-height: 30px
+$footer-height: 60px
 html
 	position: relative
 	min-height: 100%
@@ -110,6 +112,17 @@ footer
 	bottom: 0
 	width: 100%
 	height: $footer-height
+	& > .container-bottom
+		width: 100%
+		position: absolute
+		bottom: 0
+		left: 0
+		.dropup > button
+			background-color: transparent !important
+			color: $flat-turquoise
+			border: none
+			padding: 0
+			margin: 0
 
 // Extend navbar stylesheet
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus

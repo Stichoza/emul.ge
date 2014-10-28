@@ -9,6 +9,8 @@
 		<meta name="author" content="">
 		<link rel="icon" href="{{ asset('favicon.ico') }}">
 
+		<meta property="og:image" content="{{ asset('images/flask.png') }}">
+
 		<title>Emul.ge - ინფორმაცია საკვებ დანამატებზე</title>
 
 		<!-- Bootstrap core CSS -->
@@ -67,14 +69,14 @@
 			<form action="" class="bs-component" id="emulsifier-form">
 				<div class="row">
 
-					<div class="col-xs-10 col-sm-9 col-md-8 col-md-offset-1">
+					<div class="col-xs-9 col-sm-9 col-md-8 col-md-offset-1">
 							<div class="form-group">
 								<input autofocus autocomplete="off" class="form-control input-lg" type="text" id="emulsifiers" name="emulsifiers" placeholder="">
 							</div>
 					</div>
 
-					<div class="col-xs-2 col-sm-3 col-md-2">
-						<button id="emulsifier-submit" type="sutmit" class="btn btn-block btn-lg btn-primary"><i class="hidden fa fa-flask"></i><img src="{{ asset('images/flask.svg') }}" alt=""></button>
+					<div class="col-xs-3 col-sm-3 col-md-2">
+						<button id="emulsifier-submit" type="sutmit" class="btn btn-block btn-lg btn-primary"><i class="fa fa-plus"></i><span class="hidden-sm hidden-xs"> დამატება</span></button>
 					</div>
 
 				</div>
@@ -124,20 +126,35 @@
 		</div>
 
 		<footer>
-			<div class="container">
-				<div class="row small">
-					<div class="col-xs-4">
-						<p class="text-left text-muted font-mtavruli">&copy; 2014 &middot; საავტორო უფლებები დაცულია</p>
-					</div>
-					<div class="col-xs-4">
-						<ul class="list-unstyled list-inline text-center text-muted font-mtavruli">
-							<li><a href="#">მოხმარების წესები</a></li>
-							<li><a href="#">მოხმარების წესები</a></li>
-							<li><a href="#">მოხმარების წესები</a></li>
-						</ul>
-					</div>
-					<div class="col-xs-4">
-						<p class="text-right text-muted font-helvetica font-thin">Developed by <a href="https://stichoza.com">Stichoza</a></p>
+			<div class="container-bottom">
+				<div class="container"><!-- positioning stuff -->
+					<div class="row small">
+						<div class="col-sm-4 col-xs-6 text-left">
+							<p class="hidden-xs text-muted font-mtavruli">&copy; 2014 &middot; საავტორო უფლებები დაცულია</p>
+							<div class="visible-xs-inline-block btn-group dropup">
+								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+									More <span class="caret"></span>
+									<span class="sr-only">Toggle Dropdown</span>
+								</button>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Separated link</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="hidden-xs col-sm-4 text-center">
+							<ul class="hidden-xs list-unstyled list-inline text-center text-muted font-mtavruli">
+								<li><a href="#">მოხმარების წესები</a></li>
+								<li><a href="#">წესები</a></li>
+								<li><a href="#">მოხმარების წესები</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-4 col-xs-6 text-right">
+							<p class="text-muted font-helvetica font-thin">Developed by <a href="https://stichoza.com">Stichoza</a></p>
+						</div>
 					</div>
 				</div>
 			</div>
