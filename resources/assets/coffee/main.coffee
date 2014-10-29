@@ -94,8 +94,8 @@ $ '#emulsifier-form'
 $ '#loading-results, #results'
 	.hide yes
 
+tagsInputFake.attr 'tabindex', 1            # Add tabindex to fake input for UX
 tagsInputInitial.tagsinput 'focus'          # Initial focus
-tagsInputFake.attr 'tabindex', 1
 $('.bootstrap-tagsinput').addClass 'active' # Add active class nitially, a 'focus' event is not triggered above
 # Initial focus
 
