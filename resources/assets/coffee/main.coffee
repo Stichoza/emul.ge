@@ -15,17 +15,16 @@ $ '#emulsifiers'
 			else
 				'E' + item
 
+# Save input references to avoid multiple selections
+tagsInputInitial = $ '#emulsifiers'
+tagsInputFake    = tagsInputInitial.parent().find '.bootstrap-tagsinput input:text' # Must be after tagsinput init
+
 # Add initial data from hash
 for emulsifier of window.getHash().split(',')
-	$ '#emulsifiers'
-		.tagsinput 'add', window.getHash().split(',')[emulsifier]
-
-# Initial focus
-$ '#emulsifiers'
-	.tagsinput 'focus'
+	tagsInputInitial.tagsinput 'add', window.getHash().split(',')[emulsifier]
 
 # Update hash on tag change
-$ '#emulsifiers'
+tagsInputInitial
 	.on 'beforeItemAdd', (event) ->
 		console.log "Received #{event.item}"
 		if event.item.charAt(0) == 'e' or event.item.charAt(0) == 'E'
@@ -33,34 +32,41 @@ $ '#emulsifiers'
 		if /^(E|e)?([\d]{3,4})([a-z])?$/.test event.item
 			console.log "Adding #{event.item}"
 		else
-			event.cancel = yes
+			tagsInputFake.popover 'show'
+			event.cancel = yes # This shit must be event.preventDefault()
 			console.log "Rejected #{event.item}"
+			console.log tagsInputFake
 			_item = event.item
-			setTimeout =>
-				$(@).parent().find('.bootstrap-tagsinput input').val _item
+			setTimeout ->
+				tagsInputFake.val _item
 			, 2
 	.on 'itemAdded itemRemoved', (event) =>
 		console.log "Added #{event.item}"
+		#tagsInputFake.popover 'hide' # Moved to tagsInputFake.keyup
 		reloadResults event # TODO maybe just on submit
 		updateHash yes
+
+# Hide popover on text enter
+tagsInputFake.on 'keypress', (event) ->
+	if event.which not in [13, 44] then setTimeout ->
+		tagsInputFake.popover 'hide'
+	, 50
 
 # Simulate focus/blur on outer container
 $ document
 	.on 'focus', '.bootstrap-tagsinput > input', (event) ->
-		$ '.bootstrap-tagsinput'
-			.addClass 'active'
+		$(@).parent().addClass 'active'
 	.on 'blur', '.bootstrap-tagsinput > input', (event) ->
-		$ '.bootstrap-tagsinput'
-			.removeClass 'active'
+		$(@).parent().removeClass 'active'
 
 # From buttons
 $('#emulsifier-submit').click (event) -> $('#emulsifier-form').submit()
-	
 
 # Form submit
 $ '#emulsifier-form'
 	.submit (event) ->
 		event.preventDefault()
+		tagsInputFake.val('').popover 'hide'
 		$ '#start-hint, #results'
 			.fadeOut 250
 		$ '#loading-results'
@@ -75,10 +81,25 @@ $ '#emulsifier-form'
 		, 1800
 
 
-### Initial run ###
+#####################
+###                ###
+####  Initial run  ####
+###                ###
+#####################
 
 $ '#loading-results, #results'
 	.hide yes
 
-$ '.bootstrap-tagsinput'
-		.addClass 'active'
+tagsInputInitial.tagsinput 'focus'          # Initial focus
+$('.bootstrap-tagsinput').addClass 'active' # Add active class nitially, a 'focus' event is not triggered above
+# Initial focus
+
+tagsInputFake.popover
+	placement: 'bottom'
+	html: yes
+	trigger: 'manual'
+	title: 'შეცდომა :('
+	content: '<p>ემულგატორები იწერება შემდეგი ფორმატით:
+		<code><b class="text-success">E</b><b class="text-danger">AAA</b><b class="text-warning">B</b></code>,
+		სადაც AAA არის ემულგატორის ნომერი, ხოლო B შეიძლება იყოს (ან არა) დამატებითი ასო-ნიშანი.</p>
+		<p>მაგ.: <span class="font-helvetica">E102, E144, E472a</span></p>'
