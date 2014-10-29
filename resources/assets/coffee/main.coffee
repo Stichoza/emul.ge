@@ -75,14 +75,16 @@ $ '#emulsifier-form'
 		$ '#loading-results'
 			.delay 280
 			.fadeIn 300
-		scrollToObject @
 		setTimeout ->
 			$ '#loading-results'
 				.fadeOut 250
 			$ '#results'
 				.delay 280
 				.fadeIn 300
-		, 1800
+		, 1800 # fake ajax
+		setTimeout =>
+			scrollToObject '#results'
+		, 2300 # on results load
 
 
 #####################

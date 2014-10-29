@@ -82,8 +82,12 @@
 
 					<div class="_col-xs-3 col-sm-3 col-md-2">
 						<div class="btn-group btn-group-justified">
-							<a id="emulsifier-submit" tabindex="2" class="btn btn-lg btn-primary"><i class="fa fa-fw fa-check"></i> <span class="visible-xs-inline">ოკ</span></a>
-							<a id="emulsifier-add" tabindex="3" class="btn btn-lg btn-primary"><i class="fa fa-fw fa-plus"></i> <span class="visible-xs-inline">დამატება</span></a>
+							<div class="btn-group">
+								<button id="emulsifier-submit" tabindex="2" class="btn btn-lg btn-primary"><i class="fa fa-fw fa-check"></i> <span class="visible-xs-inline">ოკ</span></button>
+							</div>
+							<div class="btn-group">
+								<button id="emulsifier-add" tabindex="3" class="btn btn-lg btn-primary"><i class="fa fa-fw fa-plus"></i> <span class="visible-xs-inline">დამატება</span></button>
+							</div>
 						</div>
 					</div>
 
