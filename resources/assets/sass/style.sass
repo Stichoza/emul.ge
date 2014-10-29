@@ -30,9 +30,10 @@ h1, h2, h3, h4, h5, h6, .btn, .form-control, .navbar-nav > li > a
 		@extend .font-thin
 		font-size: 12px
 		background-color: $flat-green-sea
-		// position: absolute
-		// top: 0
-		// left: 0
+		transition: opacity 0.5s ease
+		opacity: 0.5
+		&:hover
+			opacity: 1
 
 .bootstrap-tagsinput
 	border-width: 2px
@@ -63,7 +64,9 @@ h1, h2, h3, h4, h5, h6, .btn, .form-control, .navbar-nav > li > a
 	.tag > span:hover
 		box-shadow: none !important
 
+#emulsifier-add,
 #emulsifier-submit
+	text-align: center
 	border-width: 2px
 	padding-left: 0
 	padding-right: 0
@@ -139,3 +142,5 @@ footer
 
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus
 	color: white
+.open > .dropdown-toggle.btn-default
+	color: $flat-green-sea

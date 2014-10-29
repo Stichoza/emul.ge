@@ -18,7 +18,10 @@ class HomeController extends Controller {
 			Log::write('Unable to instantiate Repository object');
 		}
 
-		$bundle['git_last_tag_name'] = !is_null($git->getLastTag()) ? $git->getLastTag()->getName() : 'no tag';
+		$bundle['git'] = [
+			'last_tag_name'  => !is_null($git->getLastTag()) ? $git->getLastTag()->getName() : 'no tag',
+			'current_branch' => $git->getMainBranch()->getName()
+		];
 
 
 		return view('hello', $bundle);

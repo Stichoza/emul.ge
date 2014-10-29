@@ -53,6 +53,10 @@ $ document
 		$ '.bootstrap-tagsinput'
 			.removeClass 'active'
 
+# From buttons
+$('#emulsifier-submit').click (event) -> $('#emulsifier-form').submit()
+	
+
 # Form submit
 $ '#emulsifier-form'
 	.submit (event) ->

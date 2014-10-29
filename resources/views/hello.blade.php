@@ -43,7 +43,7 @@
 					<a class="navbar-brand" href="{{ asset('/') }}">
 						<i class="fa fa-flask"></i> EMUL.GE
 						<sup class="brand-version-container">
-							<span class="label label-default brand-version" title="{!! $git_last_tag_name !!}">alpha</span>
+							<span class="label label-default brand-version" title="{!! $git['last_tag_name'] !!}{{'@'}}{!! $git['current_branch'] !!}">alpha</span>
 						</sup>
 					</a>
 				</div>
@@ -74,14 +74,17 @@
 			<form action="" class="bs-component" id="emulsifier-form">
 				<div class="row">
 
-					<div class="col-xs-9 col-sm-9 col-md-8 col-md-offset-1">
+					<div class="_col-xs-9 col-sm-9 col-md-8 col-md-offset-1">
 							<div class="form-group">
-								<input autofocus autocomplete="off" class="form-control input-lg" type="text" id="emulsifiers" name="emulsifiers" placeholder="">
+								<input autofocus autocomplete="off" class="form-control input-lg" type="text" id="emulsifiers" name="emulsifiers" placeholder="...">
 							</div>
 					</div>
 
-					<div class="col-xs-3 col-sm-3 col-md-2">
-						<button id="emulsifier-submit" type="sutmit" class="btn btn-block btn-lg btn-primary"><i class="fa fa-plus"></i><span class="hidden-sm hidden-xs"> დამატება</span></button>
+					<div class="_col-xs-3 col-sm-3 col-md-2">
+						<div class="btn-group btn-group-justified">
+							<a id="emulsifier-submit" tabindex="2" class="btn btn-lg btn-primary"><i class="fa fa-fw fa-check"></i> <span class="visible-xs-inline">ოკ</span></a>
+							<a id="emulsifier-add" tabindex="3" class="btn btn-lg btn-primary"><i class="fa fa-fw fa-plus"></i> <span class="visible-xs-inline">დამატება</span></a>
+						</div>
 					</div>
 
 				</div>
