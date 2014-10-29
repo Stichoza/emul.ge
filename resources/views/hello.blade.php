@@ -75,9 +75,9 @@
 				<div class="row">
 
 					<div class="_col-xs-9 col-sm-9 col-md-8 col-md-offset-1">
-							<div class="form-group">
-								<input autofocus autocomplete="off" class="form-control input-lg" type="text" id="emulsifiers" name="emulsifiers" placeholder="...">
-							</div>
+						<div class="form-group">
+							<input autofocus autocomplete="off" class="form-control input-lg" type="text" id="emulsifiers" name="emulsifiers" placeholder="...">
+						</div>
 					</div>
 
 					<div class="_col-xs-3 col-sm-3 col-md-2">
