@@ -2,6 +2,8 @@ reloadResults  = (event) -> $.getJSON '.', (data) -> console.log data   #
 window.getHash = ()      -> window.location.hash.substr(3)              # get hash without "#!"
 window.setHash = (hash)  -> window.location.hash = "!/#{hash}"          # set hash
 updateHash     = ()      -> window.setHash $('#emulsifiers').val()      # Update hash with entered data
+scrollToObject = (selector) -> $('html,body').animate
+	scrollTop: $(selector).offset().top
 
 # Init tagsinput
 $ '#emulsifiers'
@@ -58,6 +60,7 @@ $ document
 		$(@).parent().addClass 'active'
 	.on 'blur', '.bootstrap-tagsinput > input', (event) ->
 		$(@).parent().removeClass 'active'
+		tagsInputFake.popover 'hide'
 
 # From buttons
 $('#emulsifier-submit').click (event) -> $('#emulsifier-form').submit()
@@ -72,6 +75,7 @@ $ '#emulsifier-form'
 		$ '#loading-results'
 			.delay 280
 			.fadeIn 300
+		scrollToObject @
 		setTimeout ->
 			$ '#loading-results'
 				.fadeOut 250
@@ -91,6 +95,7 @@ $ '#loading-results, #results'
 	.hide yes
 
 tagsInputInitial.tagsinput 'focus'          # Initial focus
+tagsInputFake.attr 'tabindex', 1
 $('.bootstrap-tagsinput').addClass 'active' # Add active class nitially, a 'focus' event is not triggered above
 # Initial focus
 
@@ -101,5 +106,7 @@ tagsInputFake.popover
 	title: 'შეცდომა :('
 	content: '<p>ემულგატორები იწერება შემდეგი ფორმატით:
 		<code><b class="text-success">E</b><b class="text-danger">AAA</b><b class="text-warning">B</b></code>,
-		სადაც AAA არის ემულგატორის ნომერი, ხოლო B შეიძლება იყოს (ან არა) დამატებითი ასო-ნიშანი.</p>
-		<p>მაგ.: <span class="font-helvetica">E102, E144, E472a</span></p>'
+		სადაც AAA არის ემულგატორის ნომერი, ხოლო B შეიძლება იყოს (ან არა) დამატებითი ასო-ნიშანი.</p><p>მაგ.:
+		<code><b class="text-success">E</b><b class="text-danger">102</b></code>,
+		<code><b class="text-success">E</b><b class="text-danger">1412</b></code>,
+		<code><b class="text-success">E</b><b class="text-danger">161</b><b class="text-warning">c</b></code></p>'
