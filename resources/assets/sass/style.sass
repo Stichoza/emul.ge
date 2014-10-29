@@ -24,8 +24,15 @@ h1, h2, h3, h4, h5, h6, .btn, .form-control, .navbar-nav > li > a
 	text-transform: uppercase
 
 .navbar-brand
-	font-family: "Helvetica Neue", "Helvetica", sans-serif
-	font-weight: 100
+	@extend .font-helvetica
+	@extend .font-thin
+	.brand-version
+		@extend .font-thin
+		font-size: 12px
+		background-color: $flat-green-sea
+		// position: absolute
+		// top: 0
+		// left: 0
 
 .bootstrap-tagsinput
 	border-width: 2px

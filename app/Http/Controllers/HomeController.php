@@ -1,6 +1,7 @@
 <?php namespace App\Http\Controllers;
 
 use Illuminate\Routing\Controller;
+use GitElephant\Repository as GitRepository;
 
 class HomeController extends Controller {
 
@@ -9,7 +10,18 @@ class HomeController extends Controller {
 	 */
 	public function index()
 	{
-		return view('hello');
+		$bundle = [];
+
+		try {
+			$git = new GitRepository('.');
+		} catch (Exception $e) {
+			Log::write('Unable to instantiate Repository object');
+		}
+
+		$bundle['git_last_tag_name'] = !is_null($git->getLastTag()) ? $git->getLastTag()->getName() : 'no tag';
+
+
+		return view('hello', $bundle);
 	}
 
 }

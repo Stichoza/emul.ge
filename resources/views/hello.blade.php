@@ -40,7 +40,12 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="{{ asset('/') }}"><i class="fa fa-flask"></i> EMUL.GE</a>
+					<a class="navbar-brand" href="{{ asset('/') }}">
+						<i class="fa fa-flask"></i> EMUL.GE
+						<sup class="brand-version-container">
+							<span class="label label-default brand-version" title="{!! $git_last_tag_name !!}">alpha</span>
+						</sup>
+					</a>
 				</div>
 				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
@@ -133,15 +138,14 @@
 							<p class="hidden-xs text-muted font-mtavruli">&copy; 2014 &middot; საავტორო უფლებები დაცულია</p>
 							<div class="visible-xs-inline-block btn-group dropup">
 								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-									More <span class="caret"></span>
-									<span class="sr-only">Toggle Dropdown</span>
+									მეტი <i class="fa fa-ellipsis-h"></i>
 								</button>
 								<ul class="dropdown-menu" role="menu">
 									<li><a href="#">Action</a></li>
 									<li><a href="#">Another action</a></li>
 									<li><a href="#">Something else here</a></li>
 									<li class="divider"></li>
-									<li><a href="#">Separated link</a></li>
+									<li class="disabled font-mtavruli small"><a>&copy; 2014 &middot; საავტორო უფლებები დაცულია</a></li>
 								</ul>
 							</div>
 						</div>
@@ -153,7 +157,7 @@
 							</ul>
 						</div>
 						<div class="col-sm-4 col-xs-6 text-right">
-							<p class="text-muted font-helvetica font-thin">Developed by <a href="https://stichoza.com">Stichoza</a></p>
+							<p class="text-muted font-helvetica font-thin">Developed by <a href="https://stichoza.com" target="_blank">Stichoza</a></p>
 						</div>
 					</div>
 				</div>
@@ -166,5 +170,13 @@
 		<script src="{{ asset('lib/typeahead.js/dist/typeahead.jquery.min.js') }}"></script>
 		<script src="{{ asset('lib/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js') }}"></script>
 		<script src="{{ asset('js/dist/main.min.js') }}"></script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-30451315-5', 'auto');
+			ga('send', 'pageview');
+		</script>
 	</body>
 </html>
