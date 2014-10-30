@@ -112,3 +112,6 @@ tagsInputFake.popover
 		<code><b class="text-success">E</b><b class="text-danger">102</b></code>,
 		<code><b class="text-success">E</b><b class="text-danger">1412</b></code>,
 		<code><b class="text-success">E</b><b class="text-danger">161</b><b class="text-warning">c</b></code></p>'
+
+$ '[title]'
+	.tooltip on
