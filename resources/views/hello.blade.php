@@ -41,10 +41,10 @@
 					<div class="modal-body">
 						<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A autem itaque voluptate iusto veritatis blanditiis accusamus, animi ab rem consequatur, eveniet tempore reiciendis corrupti facilis ipsum molestiae odio quidem? Provident.</p>
 					</div>
-					<div class="modal-footer">
+					<!-- <div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">დახურვა</button>
-						<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-					</div>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div> -->
 				</div>
 			</div>
 		</div>
