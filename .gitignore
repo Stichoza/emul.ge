@@ -9,3 +9,4 @@
 .env.php
 .env
 *.log
+/database/*.bak
