@@ -137,10 +137,16 @@
 		<div class="container" id="results">
 			<h3 class="text-center">რეზულტატი</h3>
 			<div class="row">
-				<div class="col-sm-9">
+				<div class="col-sm-7">
 					<h4 class="text-center">ჯანმრთელობა</h4>
 					<div class="alert alert-danger" role="alert">Hee</div>
 					<div class="alert alert-warning" role="alert">Hee</div>
+				</div>
+				<div class="col-sm-2">
+					<h4 class="text-center">ლორემ</h4>
+					<div class="alert alert-success" role="alert">დაშვებული</div>
+					<div class="alert alert-danger" role="alert">აკრძალულია</div>
+					<div class="alert alert-warning" role="alert">ლორემი</div>
 				</div>
 				<div class="col-sm-3">
 					<h4 class="text-center">ჯანმრთელობა</h4>
