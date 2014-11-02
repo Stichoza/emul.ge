@@ -4,6 +4,7 @@ window.setHash = (hash)  -> window.location.hash = "!/#{hash}"          # set ha
 updateHash     = ()      -> window.setHash $('#emulsifiers').val()      # Update hash with entered data
 scrollToObject = (selector) -> $('html,body').animate
 	scrollTop: $(selector).offset().top
+mainRegExp     = /^(E|e)?([\d]{3,4})([a-z])?$/
 
 # Init tagsinput
 $ '#emulsifiers'
@@ -23,15 +24,20 @@ tagsInputFake    = tagsInputInitial.parent().find '.bootstrap-tagsinput input:te
 
 # Add initial data from hash
 for emulsifier of window.getHash().split(',')
-	tagsInputInitial.tagsinput 'add', window.getHash().split(',')[emulsifier]
+	slice = window.getHash().split(',')[emulsifier]
+	slice = slice.slice 1 if slice.charAt(0) in ['E', 'e']
+	if mainRegExp.test slice
+		tagsInputInitial.tagsinput 'add', slice
+updateHash yes # This initial update removes duplicates from url
 
 # Update hash on tag change
 tagsInputInitial
 	.on 'beforeItemAdd', (event) ->
 		console.log "Received #{event.item}"
-		if event.item.charAt(0) == 'e' or event.item.charAt(0) == 'E'
-			event.item = event.item.substr(1)  # TODO make this change item
-		if /^(E|e)?([\d]{3,4})([a-z])?$/.test event.item
+		if event.item.charAt(0) in ['e', 'E', 'ე']
+			#event.item = event.item.substr(1)  # TODO make this change item
+			tagsInputFake.val tagsInputFake.val().slice 1 # this doesn't work either
+		if mainRegExp.test event.item
 			console.log "Adding #{event.item}"
 		else
 			tagsInputFake.popover 'show'
@@ -50,9 +56,9 @@ tagsInputInitial
 
 # Hide popover on text enter
 tagsInputFake.on 'keypress', (event) ->
-	if event.which not in [13, 44] then setTimeout ->
+	setTimeout ->
 		tagsInputFake.popover 'hide'
-	, 50
+	, 50 if event.which not in [13, 44]
 
 # Simulate focus/blur on outer container
 $ document
@@ -112,3 +118,6 @@ tagsInputFake.popover
 		<code><b class="text-success">E</b><b class="text-danger">102</b></code>,
 		<code><b class="text-success">E</b><b class="text-danger">1412</b></code>,
 		<code><b class="text-success">E</b><b class="text-danger">161</b><b class="text-warning">c</b></code></p>'
+
+$ '[title]'
+	.tooltip on

@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9074114962d313b1bee28978dbf0ed2b",
+    "hash": "3707ec5125b7b34fcb1588a9fe93a30a",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -397,12 +397,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "700bbf22bb325a3ddd10e2fc839feb9b4958387a"
+                "reference": "f622f516740371b6217d36448f04d407a7594c3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/700bbf22bb325a3ddd10e2fc839feb9b4958387a",
-                "reference": "700bbf22bb325a3ddd10e2fc839feb9b4958387a",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/f622f516740371b6217d36448f04d407a7594c3f",
+                "reference": "f622f516740371b6217d36448f04d407a7594c3f",
                 "shasum": ""
             },
             "require": {
@@ -504,7 +504,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-10-26 23:41:09"
+            "time": "2014-11-01 18:14:57"
         },
         {
             "name": "league/flysystem",
@@ -600,12 +600,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "d0a9acbad0643726453e901d9d49c14e13de9f86"
+                "reference": "53c6cf358bf50a3d31a003639245dac1d4de694b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/d0a9acbad0643726453e901d9d49c14e13de9f86",
-                "reference": "d0a9acbad0643726453e901d9d49c14e13de9f86",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/53c6cf358bf50a3d31a003639245dac1d4de694b",
+                "reference": "53c6cf358bf50a3d31a003639245dac1d4de694b",
                 "shasum": ""
             },
             "require": {
@@ -664,7 +664,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2014-10-21 20:10:18"
+            "time": "2014-10-29 06:32:01"
         },
         {
             "name": "nesbot/carbon",
@@ -1016,12 +1016,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "613354e08fbddce0943646932b007be9873c658f"
+                "reference": "d0f361d88e5de851bbb8c542d3b6aa46d61a9ffc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/613354e08fbddce0943646932b007be9873c658f",
-                "reference": "613354e08fbddce0943646932b007be9873c658f",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/d0f361d88e5de851bbb8c542d3b6aa46d61a9ffc",
+                "reference": "d0f361d88e5de851bbb8c542d3b6aa46d61a9ffc",
                 "shasum": ""
             },
             "require": {
@@ -1060,7 +1060,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2014-10-05 19:53:07"
+            "time": "2014-10-30 13:41:35"
         },
         {
             "name": "symfony/console",
@@ -1126,12 +1126,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Debug.git",
-                "reference": "5e0da6230cf3aad7e0a6d992b7aa416f6b8e59c8"
+                "reference": "3548595c26175fdaca19cbec204668c22cda41f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Debug/zipball/5e0da6230cf3aad7e0a6d992b7aa416f6b8e59c8",
-                "reference": "5e0da6230cf3aad7e0a6d992b7aa416f6b8e59c8",
+                "url": "https://api.github.com/repos/symfony/Debug/zipball/3548595c26175fdaca19cbec204668c22cda41f0",
+                "reference": "3548595c26175fdaca19cbec204668c22cda41f0",
                 "shasum": ""
             },
             "require": {
@@ -1173,7 +1173,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "http://symfony.com",
-            "time": "2014-10-26 07:46:28"
+            "time": "2014-10-28 10:06:58"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -1334,12 +1334,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpFoundation.git",
-                "reference": "2f3efcba131a1275b5fb491bed9897ceaf7947e2"
+                "reference": "296df31964a95e880a83f8c6afe84a18001751ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/2f3efcba131a1275b5fb491bed9897ceaf7947e2",
-                "reference": "2f3efcba131a1275b5fb491bed9897ceaf7947e2",
+                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/296df31964a95e880a83f8c6afe84a18001751ee",
+                "reference": "296df31964a95e880a83f8c6afe84a18001751ee",
                 "shasum": ""
             },
             "require": {
@@ -1378,7 +1378,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "http://symfony.com",
-            "time": "2014-10-26 07:46:28"
+            "time": "2014-11-02 00:37:13"
         },
         {
             "name": "symfony/http-kernel",
@@ -1795,6 +1795,56 @@
                 "instantiate"
             ],
             "time": "2014-10-13 12:58:55"
+        },
+        {
+            "name": "fzaninotto/faker",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fzaninotto/Faker.git",
+                "reference": "9e5f46406d071d18238642287c5578b0fdc50348"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/9e5f46406d071d18238642287c5578b0fdc50348",
+                "reference": "9e5f46406d071d18238642287c5578b0fdc50348",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~1.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.5.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Faker": "src/",
+                    "Faker\\PHPUnit": "test/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Zaninotto"
+                }
+            ],
+            "description": "Faker is a PHP library that generates fake data for you.",
+            "keywords": [
+                "data",
+                "faker",
+                "fixtures"
+            ],
+            "time": "2014-10-30 10:55:26"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
@@ -2689,6 +2739,52 @@
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
             "time": "2014-10-26 07:46:28"
+        },
+        {
+            "name": "way/generators",
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JeffreyWay/Laravel-4-Generators.git",
+                "reference": "4a215769643507326192a739058a0c7105d932b5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JeffreyWay/Laravel-4-Generators/zipball/4a215769643507326192a739058a0c7105d932b5",
+                "reference": "4a215769643507326192a739058a0c7105d932b5",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "behat/behat": "~2.5.1",
+                "behat/mink": "~1.5.0",
+                "behat/mink-extension": "~1.2.0",
+                "behat/mink-goutte-driver": "~1.0.9",
+                "behat/mink-selenium2-driver": "~1.1.1",
+                "phpspec/phpspec": "~2.0",
+                "phpunit/phpunit": "~3.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Way\\Generators": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeffrey Way",
+                    "email": "jeffrey@jeffrey-way.com"
+                }
+            ],
+            "description": "Rapidly generate resources, migrations, models, and much more.",
+            "time": "2014-10-01 04:00:00"
         }
     ],
     "aliases": [],

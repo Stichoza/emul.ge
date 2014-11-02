@@ -31,6 +31,24 @@
 
 	<body>
 
+		<div class="modal fade" id="modal-how-to-use" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">დახურვა</span></button>
+						<h4 class="modal-title" id="myModalLabel"><i class="fa fa-question-circle"></i> როგორ გამოვიყენო</h4>
+					</div>
+					<div class="modal-body">
+						<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A autem itaque voluptate iusto veritatis blanditiis accusamus, animi ab rem consequatur, eveniet tempore reiciendis corrupti facilis ipsum molestiae odio quidem? Provident.</p>
+					</div>
+					<!-- <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">დახურვა</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div> -->
+				</div>
+			</div>
+		</div>
+
 		<div class="navbar navbar-static-top navbar-inverse" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
@@ -43,7 +61,7 @@
 					<a class="navbar-brand" href="{{ asset('/') }}">
 						<i class="fa fa-flask"></i> EMUL.GE
 						<sup class="brand-version-container">
-							<span class="label label-default brand-version" title="{!! $git['last_tag_name'] !!}{{'@'}}{!! $git['current_branch'] !!}">alpha</span>
+							<span class="label label-default brand-version" data-placement="right" title="{!! $git['last_tag_name'] !!}{{'@'}}{!! $git['current_branch'] !!}">alpha</span>
 						</sup>
 					</a>
 				</div>
@@ -54,7 +72,7 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">ინფორმაცია <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
-								<li><a href="#">როგორ გამოვიყენო?</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#modal-how-to-use">როგორ გამოვიყენო?</a></li>
 								<li><a href="#">რა არის ემულგატორი?</a></li>
 								<li><a href="#">Something else here</a></li>
 								<li class="divider"></li>
@@ -83,10 +101,10 @@
 					<div class="_col-xs-3 col-sm-3 col-md-2">
 						<div class="btn-group btn-group-justified">
 							<div class="btn-group">
-								<button id="emulsifier-submit" tabindex="2" class="btn btn-lg btn-primary"><i class="fa fa-fw fa-check"></i> <span class="visible-xs-inline">ოკ</span></button>
+								<button type="submit" id="emulsifier-submit" tabindex="2" class="btn btn-lg btn-primary"><i class="fa fa-fw fa-check"></i> <span class="visible-xs-inline">ოკ</span></button>
 							</div>
 							<div class="btn-group">
-								<button id="emulsifier-add" tabindex="3" class="btn btn-lg btn-primary"><i class="fa fa-fw fa-plus"></i> <span class="visible-xs-inline">დამატება</span></button>
+								<button type="button" id="emulsifier-add" tabindex="3" class="btn btn-lg btn-primary"><i class="fa fa-fw fa-plus"></i> <span class="visible-xs-inline">დამატება</span></button>
 							</div>
 						</div>
 					</div>
@@ -119,20 +137,23 @@
 		<div class="container" id="results">
 			<h3 class="text-center">რეზულტატი</h3>
 			<div class="row">
-				<div class="col-sm-4">
+				<div class="col-sm-7">
 					<h4 class="text-center">ჯანმრთელობა</h4>
 					<div class="alert alert-danger" role="alert">Hee</div>
 					<div class="alert alert-warning" role="alert">Hee</div>
 				</div>
-				<div class="col-sm-4">
-					<h4 class="text-center">ჯანმრთელობა</h4>
-					<div class="alert alert-info" role="alert">Hee</div>
-					<div class="alert alert-default" role="alert">Hee</div>
+				<div class="col-sm-2">
+					<h4 class="text-center">ლორემ</h4>
+					<div class="alert alert-success" role="alert">დაშვებული</div>
+					<div class="alert alert-danger" role="alert">აკრძალულია</div>
+					<div class="alert alert-warning" role="alert">ლორემი</div>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<h4 class="text-center">ჯანმრთელობა</h4>
-					<div class="alert alert-success" role="alert"><i class="fa fa-check"></i> Hee</div>
-					<div class="alert alert-warning" role="alert">Hee</div>
+					<div class="panel panel-primary">
+						<div class="panel-heading">რეკლამა</div>
+						<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quibusdam ad dolorum architecto rem nobis voluptatibus ducimus explicabo, nemo ex laboriosam magnam voluptate similique nam, debitis vitae laudantium possimus nihil.</div>
+					</div>
 				</div>
 			</div>
 		</div>

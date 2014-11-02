@@ -126,7 +126,11 @@ return [
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 
+		/*
+		 * Third-party Service Providers
+		 */
 		'Illuminate\Html\HtmlServiceProvider',
+		'Way\Generators\GeneratorsServiceProvider',
 
 	],
 
