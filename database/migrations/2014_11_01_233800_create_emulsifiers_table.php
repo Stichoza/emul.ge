@@ -17,8 +17,8 @@ class CreateEmulsifiersTable extends Migration {
 			$table->increments('id');
 			$table->unsignedInteger('number')->index();
 			$table->char('index', 1)->index()->nullable();
-			$table->string('name', 300);
-			$table->string('name_q', 400);
+			$table->string('name')->index();
+			$table->string('name_q')->index();
 			$table->text('description');
 			$table->boolean('vegetarian_safe')->nullable();
 			$table->boolean('vegean_safe')->nullable();
