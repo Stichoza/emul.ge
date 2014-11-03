@@ -9,12 +9,23 @@ var elixir       = require('laravel-elixir')
 	minifycss    = require('gulp-minify-css'),
 	rename       = require('gulp-rename')
 
-elixir(function(mix) {
-	mix.sass("style.sass")
-		.routes()
-		.events()
-		.phpUnit();
-});
+gulp.task('laravel-routes', function() {
+	return elixir(function(mix) {
+		mix.routes()
+	})
+})
+
+gulp.task('laravel-events', function() {
+	return elixir(function(mix) {
+		mix.events()
+	})
+})
+
+gulp.task('test', function() {
+	return elixir(function(mix) {
+		mix.phpUnit()
+	})
+})
 
 gulp.task('styles', function() {
 	return gulp.src('resources/assets/sass/*.sass')
@@ -29,7 +40,7 @@ gulp.task('styles', function() {
 		.pipe(rename({suffix: '.min'}))
 		.pipe(minifycss())
 		.pipe(gulp.dest('public/css/dist'))
-});
+})
 
 gulp.task('scripts', function() {
 	return gulp.src('resources/assets/coffee/*.coffee')
@@ -43,8 +54,9 @@ gulp.task('scripts', function() {
 gulp.task('watch', function() {
 	gulp.watch('resources/assets/sass/*', ['styles'])
 	gulp.watch('resources/assets/coffee/*', ['scripts'])
-});
+	gulp.watch('app/Http/Controllers/**/*', ['laravel-routes', 'laravel-events'])
+})
 
+gulp.task('build', ['scripts', 'styles', 'laravel-routes', 'laravel-events'], function() {})
 
-gulp.task('build', ['scripts', 'styles'], function() {})
 gulp.task('default', ['build', 'watch'], function() {})
