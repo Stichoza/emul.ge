@@ -14,13 +14,13 @@ gulp.task 'styles', ->
         .pipe compass
             config_file: './config.rb'
             sass: 'resources/assets/sass'
-            css: 'public/css/dist'
+            css: 'public/css'
         .pipe autoprefixer 'last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'
-        .pipe gulp.dest 'public/css/dist'
+        .pipe gulp.dest 'public/css'
         .pipe rename
             suffix: '.min'
         .pipe minifycss()
-        .pipe gulp.dest 'public/css/dist'
+        .pipe gulp.dest 'public/css'
 
 gulp.task 'scripts', ->
     gulp.src 'resources/assets/coffee/**/*.coffee'
@@ -29,7 +29,7 @@ gulp.task 'scripts', ->
         .pipe uglify()
         .pipe rename
             suffix: '.min'
-        .pipe gulp.dest 'public/js/dist'
+        .pipe gulp.dest 'public/js'
 
 gulp.task 'watch', ->
     gulp.watch 'resources/assets/sass/**/*', ['styles']
