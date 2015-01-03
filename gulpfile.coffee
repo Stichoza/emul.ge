@@ -9,7 +9,7 @@ minifycss    = require 'gulp-minify-css'
 rename       = require 'gulp-rename'
 
 gulp.task 'styles', ->
-    gulp.src 'resources/assets/sass/*.sass'
+    gulp.src 'resources/assets/sass/**/*.sass'
         .on 'error', gutil.log
         .pipe compass
             config_file: './config.rb'
@@ -23,7 +23,7 @@ gulp.task 'styles', ->
         .pipe gulp.dest 'public/css/dist'
 
 gulp.task 'scripts', ->
-    gulp.src 'resources/assets/coffee/*.coffee'
+    gulp.src 'resources/assets/coffee/**/*.coffee'
         .pipe coffee()
         .on 'error', gutil.log
         .pipe uglify()
@@ -32,8 +32,8 @@ gulp.task 'scripts', ->
         .pipe gulp.dest 'public/js/dist'
 
 gulp.task 'watch', ->
-    gulp.watch 'resources/assets/sass/*', ['styles']
-    gulp.watch 'resources/assets/coffee/*', ['scripts']
+    gulp.watch 'resources/assets/sass/**/*', ['styles']
+    gulp.watch 'resources/assets/coffee/**/*', ['scripts']
     return
 
 gulp.task 'build', [
