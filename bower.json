@@ -2,9 +2,12 @@
   "name": "emul.ge",
   "dependencies": {
     "jquery": "~2.1.1",
-    "bootstrap": "~3.3",
+    "bootstrap": "~3.3.2",
     "fontawesome": "~4.2",
     "bootstrap-tagsinput": "timschlechter/bootstrap-tagsinput#~0.4.2",
-    "typeahead.js": "~0.10.5"
+    "typeahead.js": "~0.10.5",
+    "angular": "~1.3.10",
+    "angular-resource": "~1.3.10",
+    "angular-ui-router": "~0.2.13"
   }
 }

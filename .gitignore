@@ -2,6 +2,7 @@
 /client/lib
 /client/css
 /client/js
+/client/vendor
 /.sass-cache
 /database/*.bak
 *.log
