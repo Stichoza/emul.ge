@@ -6,3 +6,4 @@
 /database/*.bak
 *.log
 newrelic.js
+db.json
