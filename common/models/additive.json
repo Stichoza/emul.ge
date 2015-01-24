@@ -1,0 +1,55 @@
+{
+  "name": "Additive",
+  "plural": "Additives",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "indexNumber": {
+      "type": "number",
+      "required": true
+    },
+    "indexLetter": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "searchContent": {
+      "type": "string"
+    },
+    "veganSafe": {
+      "type": "boolean"
+    },
+    "vegetarianSafe": {
+      "type": "boolean"
+    },
+    "latinName": {
+      "type": "string"
+    },
+    "comment": {
+      "type": "string"
+    },
+    "hyperActivity": {
+      "type": "boolean"
+    },
+    "asthma": {
+      "type": "boolean"
+    },
+    "cancer": {
+      "type": "boolean"
+    },
+    "prohibitedLocally": {
+      "type": "boolean"
+    },
+    "prohibitedAbroad": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
