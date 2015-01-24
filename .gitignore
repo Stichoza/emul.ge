@@ -1,12 +1,7 @@
-/vendor
 /node_modules
 /client/lib
 /client/css/dist
 /client/js/dist
 /.sass-cache
-/bootstrap/compiled.php
-.env.*.php
-.env.php
-.env
-*.log
 /database/*.bak
+*.log
