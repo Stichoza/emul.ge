@@ -1,0 +1,962 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"las",
+				"lastPrice"
+			],
+			[
+				"last",
+				"lastprice"
+			],
+			[
+				"curr",
+				"currency"
+			],
+			[
+				"Input",
+				"Input-get	Input-get"
+			],
+			[
+				"get",
+				"get	$.get()"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"log",
+				"logItem"
+			],
+			[
+				"cu",
+				"currency"
+			],
+			[
+				"Ro",
+				"Route-get	Route-get"
+			],
+			[
+				"curren",
+				"currency_sell"
+			],
+			[
+				"sys",
+				"system"
+			],
+			[
+				"xc",
+				"xchart-currency"
+			],
+			[
+				"ta",
+				"target	Attr"
+			],
+			[
+				"border",
+				"border-style"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"Arti",
+				"Artisan-call	Artisan-call"
+			],
+			[
+				"xml",
+				"xmlNode"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"DB",
+				"DB-table	DB-table"
+			],
+			[
+				"Cach",
+				"Cache-remember	Cache-remember"
+			],
+			[
+				"Adm",
+				"AdminCurrencyController"
+			],
+			[
+				"curre",
+				"currency_multiplier"
+			],
+			[
+				"cur",
+				"currencies"
+			],
+			[
+				"parent",
+				"parent_id"
+			],
+			[
+				"fo",
+				"foreach	foreach …"
+			],
+			[
+				"tm",
+				"tmp_c"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/routes/index.js",
+			"settings":
+			{
+				"buffer_size": 201,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 291.0,
+		"selected_items":
+		[
+			[
+				"diff",
+				"Git: Diff Current File"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"lint",
+				"JSLint"
+			],
+			[
+				"set py",
+				"Set Syntax: Python"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"spaces",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"spac",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"space",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"add",
+				"Project: Add Folder"
+			],
+			[
+				"close",
+				"Project: Close"
+			],
+			[
+				"word",
+				"Word Wrap: Toggle"
+			],
+			[
+				"lar",
+				"Set Syntax: PHP - Laravel Blade"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"set css",
+				"Set Syntax: CSS"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"git bl",
+				"Git: Blame"
+			],
+			[
+				"align",
+				"Preferences: Alignment Key Bindings – Default"
+			],
+			[
+				"alig",
+				"Preferences: Alignment Key Bindings – User"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"b",
+				"Preferences: Browse Packages"
+			],
+			[
+				"bor",
+				"Preferences: Browse Packages"
+			],
+			[
+				"br",
+				"Preferences: Browse Packages"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"open r",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"ope",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"open",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"us",
+				"Preferences: Settings - User"
+			],
+			[
+				"res",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"reso",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"git a",
+				"Git: Amend Commit"
+			],
+			[
+				"todo",
+				"TodoReview: Project Files"
+			],
+			[
+				"set sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"set php",
+				"Set Syntax: PHP"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"git pull",
+				"Git: Pull"
+			],
+			[
+				"git p",
+				"Git: Pull"
+			],
+			[
+				"git",
+				"Git: Change Branch"
+			],
+			[
+				"git bra",
+				"Git: Change Branch"
+			],
+			[
+				"git br",
+				"Git: Change Branch"
+			],
+			[
+				"git check",
+				"Git: Checkout Tag"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 579.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"c()",
+			"c",
+			"clear()",
+			"clear",
+			"c",
+			"\"\"\"sfsdfgdfg\"\"\"",
+			"printf \"\"\"sdfsdf\"\"\"",
+			"printf \"dfdfd\"",
+			"printf '",
+			"print 32;",
+			"print 32",
+			"print \"mindControl.receive() – failed: Unrecognized frequencies from brain\"",
+			"import io",
+			"print \"mindControl.receive() – failed: Unrecognized frequencies from brain\"",
+			"print \"mindControl.receive() – failed: Unrecognized frequencies from brain\";",
+			"print \"mindControl.receive() – failed: Unrecognized frequencies from brain\"",
+			"print mindControl.receive() – failed: Unrecognized frequencies from brain",
+			"// mindControl.receive() – failed: Unrecognized frequencies from brain",
+			"### mindControl.receive() – failed: Unrecognized frequencies from brain",
+			"; mindControl.receive() – failed: Unrecognized frequencies from brain",
+			"# mindControl.receive() – failed: Unrecognized frequencies from brain"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/app",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/app/routes",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/public",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/resources",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/resources/assets",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/resources/assets/coffee"
+	],
+	"file_history":
+	[
+		"/Users/stichoza/Documents/Development/GitHub/express-test/package.json",
+		"/Users/stichoza/Documents/Development/GitHub/express-test/views/layout.jade",
+		"/Users/stichoza/Documents/Development/GitHub/express-test/views/index.jade",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/node_modules/gulp/node_modules/semver/test/no-module.js",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/node_modules/mongoose/node_modules/mpromise/.idea/modules.xml",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/node_modules/mongoose/lib/model.js",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/node_modules/gulp/node_modules/vinyl-fs/node_modules/graceful-fs/test/max-open.js",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/node_modules/body-parser/node_modules/bytes/Makefile",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/public/index.html",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/config.rb",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/resources/assets/sass/bootswatch/flatly.sass",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/.editorconfig",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/public/css/dist/style.min.css",
+		"/Users/stichoza/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/karma.conf.js",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/.gitignore",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/node_modules/laravel-elixir/node_modules/npm/test/tap/unpack-foreign-tarball/gitignore-and-npmignore.tgz",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/node_modules/laravel-elixir/node_modules/npm/test/tap/unpack-foreign-tarball/gitignore-and-npmignore.tar",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/node_modules/laravel-elixir/node_modules/npm/test/tap/unpack-foreign-tarball/gitignore.tgz",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/config/strategies/github.js",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/node_modules/laravel-elixir/node_modules/npm/test/tap/global-prefix-set-in-userconfig.js",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/node_modules/laravel-elixir/node_modules/npm/node_modules/normalize-package-data/test/github-urls.js",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/gulpfile.coffee",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/node_modules/gulp-util/lib/isNull.js",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/package.json",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/resources/assets/sass/style.sass",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/public/emulsions.json",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/emulsions.json",
+		"/Users/stichoza/Documents/Development/GitHub/emul.ge/vendor/phpunit/phpunit/build/phar-autoload.php.in",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/controllers/HomeController.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/views/test.blade.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/public/lib/ibutton/css/docs-Old.css",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/public/lib/jquery-ui/tests/visual/compound/draggable_accordion_accordion_tabs_draggable.html",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/public/lib/select2/select2_locale_ar.js",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/public/lib/select2/select2_locale_el.js",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/likegeorgia.sublime-project",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/config/queue.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/vendor/nikic/php-parser/lib/PHPParser/NodeVisitorAbstract.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/.idea/vcs.xml",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/public/js/admin/main.js",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/controllers/AdminToursController.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/vendor/geoip2/geoip2/src/GeoIp2/Exception/HttpException.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/filters.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/vendor/phpseclib/phpseclib/AUTHORS",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/config/auth.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/bootstrap/autoload.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/vendor/symfony/routing/Symfony/Component/Routing/Matcher/ApacheUrlMatcher.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/vendor/guzzle/guzzle/src/Guzzle/Iterator/FilterIterator.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/vendor/symfony/http-kernel/Symfony/Component/HttpKernel/UriSigner.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/models/User.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/vendor/phpseclib/phpseclib/phpseclib/openssl.cnf",
+		"/Users/stichoza/Documents/Development/GitHub/ground-control/app/config/app.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/vendor/composer/autoload_psr4.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/start/artisan.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/controllers/AdminDashController.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/controllers/BaseController.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/views/admin/hotels/add.blade.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/models/lang/HotelLang.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/controllers/AdminNewsController.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/public/coreadmin/pages/dashboard/dashboard.html",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/public/lib/jquery-ui/tests/visual/compound/draggable_accordion.html",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/config/database.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/public/js/jquery.js",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/public/js/main_front.js",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/views/admin/currency/board.blade.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/config/bundle/admin/sidebar_menu.json",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/views/layouts/admin/components/content/caption.blade.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/controllers/AdminLandmarksController.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/public/css/coreadmin.css",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/composer.json",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/db_data/main_db.mwb",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/config/mail.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/vendor/laravel/framework/src/Illuminate/Database/Eloquent/MassAssignmentException.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/.idea/misc.xml",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/views/admin/hotels/list.blade.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/views/admin/bookings/list.blade.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/public/lib/font-awesome/less/list.less",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/public/lib/lightslider/css/lightSlider.css",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/vendor/predis/predis/lib/Predis/Command/ListIndex.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/vendor/guzzle/guzzle/docs/plugins/curl-auth-plugin.rst",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/lib/dompdf/include/cpdf_adapter.cls.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/views/layouts/admin/components/nav.blade.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/views/admin/bookings/details.blade.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/views/admin/landmarks/included.blade.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/views/layouts/admin/components/map.blade.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/views/about.blade.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/views/hello.blade.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/lib/dompdf/include/block_frame_decorator.cls.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/public/lib/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.da.js",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/lib/dompdf/lib/php-font-lib/maps/adobe-standard-encoding.map",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/public/lib/jquery-ui/ui/minified/i18n/jquery.ui.datepicker-ar-DZ.min.js",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/models/lang/BookingLang.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/vendor/laravel/framework/src/Illuminate/Support/Facades/Blade.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/_ide_helper.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/public/index.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/views/pdf/invoice_full.blade.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/vendor/predis/predis/lib/Predis/Command/ServerInfo.php",
+		"/Users/stichoza/Documents/Development/BubuDesign/BeginCSS/stilebi/chveni-stili.css",
+		"/Users/stichoza/Documents/Development/BubuDesign/BeginCSS/popopo.html",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/public/lib/jquery-ui/ui/jquery.ui.effect-highlight.js",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/database/seeds/DatabaseSeeder.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/artisan",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/vendor/composer/autoload_real.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/lib/dompdf/lib/fonts/Courier-Oblique.afm",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/views/news_all.blade.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/lib/Nyan.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/controllers/AdminMapDocController.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/controllers/AdminTransportCompaniesController.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/controllers/AdminPlaceTypesController.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/controllers/AdminHotelsController.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/public/font/bpg_ingiri_arial.svg",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/vendor/bin/boris",
+		"/Users/stichoza/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/stichoza/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/stichoza/Library/Application Support/Sublime Text 3/Packages/Alignment/Default (OSX).sublime-keymap",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/routes.php",
+		"/Users/stichoza/Library/Application Support/Sublime Text 3/Packages/User/Base File.sublime-settings",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/public/lib/jquery-ui/tests/unit/resizable/resizable_options.js",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/readme.md",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/public/coreadmin/pages/ui_lab/grid.html",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/controllers/AdminTransportTypesController.php",
+		"/Users/stichoza/Library/Application Support/Sublime Text 3/Packages/GitGutter/Default (OSX).sublime-keymap",
+		"/Users/stichoza/Library/Application Support/Sublime Text 3/Packages/Emmet/Default (OSX).sublime-keymap",
+		"/Users/stichoza/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/stichoza/Library/Application Support/Sublime Text 3/Packages/User/PHP.sublime-settings",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/views/admin/tours/add.blade.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/models/TourDayHotel.php",
+		"/Users/stichoza/Documents/Development/Projects/likegeorgia/app/views/tour.blade.php"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"') }}",
+			"asset",
+			"dist",
+			"'\n",
+			"\"",
+			"');",
+			"sm",
+			"main_front.js",
+			"lastPrice",
+			"');\n",
+			"tooltip",
+			"%H:%i:%s",
+			"replace",
+			"box",
+			"used_size",
+			"round",
+			",\n",
+			"disk_total_space",
+			"disk_free_space",
+			"('/'),",
+			"4",
+			"muted",
+			"Project",
+			"Analytics",
+			"sm-6",
+			"padded",
+			"BOT",
+			"LikeGeorgia",
+			"orange",
+			"commandOutputStream",
+			"found",
+			"return",
+			"id",
+			"dd",
+			");",
+			"table",
+			"currencies",
+			"argument",
+			"edit",
+			"admin",
+			"\",\n",
+			"120",
+			"',\n",
+			"icon_folder",
+			"folder",
+			"theme",
+			"gray_antialias",
+			"tour_",
+			"tour_types",
+			"		\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/routes/index.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 201,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								201,
+								201
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 114.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 100.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 114.0
+	},
+	"project": "emul.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"giti",
+				".gitignore"
+			],
+			[
+				"gulp",
+				"gulpfile.coffee"
+			],
+			[
+				"ind",
+				"public/index.html"
+			],
+			[
+				"homec",
+				"app/controllers/HomeController.php"
+			],
+			[
+				"rou",
+				"app/routes.php"
+			],
+			[
+				"filt",
+				"app/filters.php"
+			],
+			[
+				"data",
+				"app/config/database.php"
+			],
+			[
+				"home",
+				"app/controllers/HomeController.php"
+			],
+			[
+				"curr",
+				"app/commands/CurrencyUpdaterTask.php"
+			],
+			[
+				"hom",
+				"app/controllers/HomeController.php"
+			],
+			[
+				"lan",
+				"app/models/Landmark.php"
+			],
+			[
+				"lel",
+				"app/lib/Leloquent.php"
+			],
+			[
+				"vali",
+				"app/lang/en/validation.php"
+			],
+			[
+				"tour",
+				"app/models/Tour.php"
+			],
+			[
+				"adminda",
+				"app/controllers/AdminDashController.php"
+			],
+			[
+				"comp",
+				"composer.json"
+			],
+			[
+				"hell",
+				"app/views/hello.blade.php"
+			],
+			[
+				"fil",
+				"app/filters.php"
+			],
+			[
+				"ro",
+				"app/routes.php"
+			],
+			[
+				"auth",
+				"app/controllers/AuthController.php"
+			],
+			[
+				"user",
+				"app/models/User.php"
+			],
+			[
+				"dashcon",
+				"app/controllers/AdminDashController.php"
+			],
+			[
+				"dash",
+				"app/views/admin/dash.blade.php"
+			],
+			[
+				"app",
+				"app/config/app.php"
+			],
+			[
+				"dashc",
+				"app/controllers/AdminDashController.php"
+			],
+			[
+				"com",
+				"composer.json"
+			],
+			[
+				"touradd",
+				"app/views/admin/tours/add.blade.php"
+			],
+			[
+				"hoteladd",
+				"app/views/admin/hotels/add.blade.php"
+			],
+			[
+				"admincss",
+				"public/css/coreadmin.css"
+			],
+			[
+				"jq",
+				"public/js/jquery_mine.js"
+			],
+			[
+				"hote",
+				"app/views/hotel.blade.php"
+			],
+			[
+				"main",
+				"public/js/main_front.js"
+			],
+			[
+				"adminmen",
+				"app/config/bundle/admin/sidebar_menu.json"
+			],
+			[
+				"coread",
+				"public/css/coreadmin.css"
+			],
+			[
+				"mainj",
+				"public/js/admin/main.js"
+			],
+			[
+				"core",
+				"public/css/coreadmin.css"
+			],
+			[
+				"list",
+				"app/views/admin/hotels/list.blade.php"
+			],
+			[
+				"adminj",
+				"public/js/admin/main.js"
+			],
+			[
+				"das",
+				"app/controllers/AdminDashController.php"
+			],
+			[
+				"capt",
+				"app/views/layouts/admin/components/content/caption.blade.php"
+			],
+			[
+				"nav",
+				"app/views/layouts/admin/components/nav.blade.php"
+			],
+			[
+				"adminblade",
+				"app/views/admin/bookings/details.blade.php"
+			],
+			[
+				"blade.",
+				"app/views/hello.blade.php"
+			],
+			[
+				"adminto",
+				"app/controllers/AdminToursController.php"
+			],
+			[
+				"adminla",
+				"app/controllers/AdminLandmarksController.php"
+			],
+			[
+				"artis",
+				"app/start/artisan.php"
+			],
+			[
+				"adminmenu",
+				"app/config/bundle/admin/sidebar_menu.json"
+			],
+			[
+				"base",
+				"app/controllers/BaseController.php"
+			],
+			[
+				".html",
+				"public/coreadmin/pages/ui_lab/grid.html"
+			],
+			[
+				"sty",
+				"public/style.css"
+			],
+			[
+				"adminland",
+				"app/controllers/AdminLandmarksController.php"
+			],
+			[
+				"tourbl",
+				"app/views/tour.blade.php"
+			],
+			[
+				"hotelbla",
+				"app/views/hotel.blade.php"
+			],
+			[
+				"landadd",
+				"app/views/admin/landmarks/add.blade.php"
+			],
+			[
+				"landmadd",
+				"app/views/admin/landmarks/add.blade.php"
+			],
+			[
+				"hotadd",
+				"app/views/admin/hotels/add.blade.php"
+			],
+			[
+				"hotels",
+				"app/views/admin/hotels/add.blade.php"
+			],
+			[
+				"adminjs",
+				"public/js/admin/main.js"
+			],
+			[
+				"cat",
+				"app/views/admin/tours/categores.md"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/Documents/Development/GitHub/ground-control/ground-control.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 242.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
