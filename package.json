@@ -12,6 +12,7 @@
     "loopback": "^2.8.0",
     "loopback-boot": "^2.4.0",
     "loopback-datasource-juggler": "^2.7.0",
+    "newrelic": "^1.15.0",
     "serve-favicon": "^2.0.1"
   },
   "optionalDependencies": {
@@ -35,6 +36,6 @@
     "url": ""
   },
   "engines": {
-      "node": "0.10.x"
+    "node": "0.10.x"
   }
 }
