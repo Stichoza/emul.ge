@@ -1,7 +1,7 @@
 /node_modules
 /client/lib
-/client/css/dist
-/client/js/dist
+/client/css
+/client/js
 /.sass-cache
 /database/*.bak
 *.log
