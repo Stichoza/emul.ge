@@ -9,31 +9,31 @@ minifycss    = require 'gulp-minify-css'
 rename       = require 'gulp-rename'
 
 gulp.task 'styles', ->
-    gulp.src 'resources/assets/sass/**/*.sass'
+    gulp.src 'client/src/sass/**/*.sass'
         .on 'error', gutil.log
         .pipe compass
             config_file: './config.rb'
-            sass: 'resources/assets/sass'
-            css: 'public/css'
+            sass: 'client/src/sass'
+            css: 'client/css'
         .pipe autoprefixer 'last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'
-        .pipe gulp.dest 'public/css'
+        .pipe gulp.dest 'client/css'
         .pipe rename
             suffix: '.min'
         .pipe minifycss()
-        .pipe gulp.dest 'public/css'
+        .pipe gulp.dest 'client/css'
 
 gulp.task 'scripts', ->
-    gulp.src 'resources/assets/coffee/**/*.coffee'
+    gulp.src 'client/src/coffee/**/*.coffee'
         .pipe coffee()
         .on 'error', gutil.log
         .pipe uglify()
         .pipe rename
             suffix: '.min'
-        .pipe gulp.dest 'public/js'
+        .pipe gulp.dest 'client/js'
 
 gulp.task 'watch', ->
-    gulp.watch 'resources/assets/sass/**/*', ['styles']
-    gulp.watch 'resources/assets/coffee/**/*', ['scripts']
+    gulp.watch 'client/src/sass/**/*', ['styles']
+    gulp.watch 'client/src/coffee/**/*', ['scripts']
     return
 
 gulp.task 'build', [

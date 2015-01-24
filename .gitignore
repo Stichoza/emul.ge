@@ -1,8 +1,8 @@
 /vendor
 /node_modules
-/public/lib
-/public/css/dist
-/public/js/dist
+/client/lib
+/client/css/dist
+/client/js/dist
 /.sass-cache
 /bootstrap/compiled.php
 .env.*.php
