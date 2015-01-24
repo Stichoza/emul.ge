@@ -1,5 +1,6 @@
 {
   "name": "emul-ge",
+  "description": "emul-ge",
   "version": "1.0.0",
   "main": "server/server.js",
   "scripts": {
@@ -33,5 +34,7 @@
     "type": "",
     "url": ""
   },
-  "description": "emul-ge"
+  "engines": {
+      "node": "0.10.x"
+  }
 }
