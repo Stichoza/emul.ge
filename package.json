@@ -5,7 +5,7 @@
   "main": "server/server.js",
   "scripts": {
     "pretest": "jshint .",
-    "postinstall": "gem install sass compass && bower install && gulp build"
+    "postinstall": "gem install sass && gem install compass && bower install && gulp build"
   },
   "dependencies": {
     "compression": "^1.0.3",
