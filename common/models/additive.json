@@ -46,10 +46,20 @@
     },
     "prohibitedAbroad": {
       "type": "boolean"
+    },
+    "riskGroupId": {
+      "type": "number",
+      "required": true
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "riskGroup": {
+      "type": "belongsTo",
+      "model": "AdditiveRiskGroup",
+      "foreignKey": "riskGroupId"
+    }
+  },
   "acls": [],
   "methods": []
 }

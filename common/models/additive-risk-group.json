@@ -1,0 +1,25 @@
+{
+  "name": "AdditiveRiskGroup",
+  "name": "AdditiveRiskGroups",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "additives": {
+      "type": "hasMany",
+      "model": "Additive",
+      "foreignKey": "riskGroupId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}

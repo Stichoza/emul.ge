@@ -28,6 +28,10 @@
   },
   "Additive": {
     "dataSource": "db",
-    "public": true
+    "public": false
+  },
+  "AdditiveRiskGroup": {
+    "dataSource": "db",
+    "public": false
   }
 }
