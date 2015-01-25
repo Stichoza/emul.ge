@@ -41,6 +41,10 @@ gulp.task 'build', [
     'styles'
 ], ->
 
+gulp.task 'heroku:production', [
+    'build'
+], ->
+
 gulp.task 'default', [
     'build'
     'watch'
