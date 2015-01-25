@@ -57,6 +57,11 @@
       "type": "belongsTo",
       "model": "AdditiveRiskGroup",
       "foreignKey": "riskGroupId"
+    },
+    "additiveTechFunction": {
+      "type": "belongsTo",
+      "model": "AdditiveTechFunction",
+      "foreignKey": "techFunctionId"
     }
   },
   "acls": [],

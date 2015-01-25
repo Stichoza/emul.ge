@@ -1,0 +1,25 @@
+{
+  "name": "AdditiveTechFunction",
+  "plural": "AdditiveTechFunctions",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "additives": {
+      "type": "hasMany",
+      "model": "Additive",
+      "foreignKey": "techFunctionId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}

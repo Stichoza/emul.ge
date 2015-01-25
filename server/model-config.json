@@ -33,5 +33,9 @@
   "AdditiveRiskGroup": {
     "dataSource": "db",
     "public": true
+  },
+  "AdditiveTechFunction": {
+    "dataSource": "db",
+    "public": true
   }
 }
