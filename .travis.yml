@@ -9,3 +9,5 @@ services:
 notifications:
   slack:
     secure: an0oiMT8VYsnZiELZl9zYEXdCxyHHu2mBZuW9lYFOF87k8Fh1pBA9sm++PYppvBS03GcdWC51jNeHS9PSZWxcyO79B0kaFId1lNXt62Kswv9cD1cK3oPiEzRlRge1sx8H4l/cPL65jYjkef/18eFKCra45gsy+gfH866QNtNU0s=
+before_install:
+  - gem install sass
