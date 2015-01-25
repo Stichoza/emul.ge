@@ -1,11 +1,11 @@
-/node_modules
-/client/lib
+*.log
+/.sass-cache
 /client/css
 /client/js
+/client/lib
 /client/vendor
-/.sass-cache
 /database/*.bak
-*.log
-newrelic.js
+/node_modules
 db.json
 emul.sublime-workspace
+newrelic.js
