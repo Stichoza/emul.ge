@@ -48,13 +48,12 @@
       "type": "boolean"
     },
     "riskGroupId": {
-      "type": "number",
-      "required": true
+      "type": "number"
     }
   },
   "validations": [],
   "relations": {
-    "riskGroup": {
+    "additiveRiskGroup": {
       "type": "belongsTo",
       "model": "AdditiveRiskGroup",
       "foreignKey": "riskGroupId"

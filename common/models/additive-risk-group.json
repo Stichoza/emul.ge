@@ -1,6 +1,6 @@
 {
   "name": "AdditiveRiskGroup",
-  "name": "AdditiveRiskGroups",
+  "plural": "AdditiveRiskGroups",
   "base": "PersistedModel",
   "idInjection": true,
   "properties": {
