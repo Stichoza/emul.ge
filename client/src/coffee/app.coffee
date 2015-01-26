@@ -1,4 +1,4 @@
-reloadResults  = (event) -> $.getJSON '.', (data) -> console.log data   # 
+reloadResults  = (event) -> $.getJSON '.', (data) -> console.log data   #
 window.getHash = ()      -> window.location.hash.substr(3)              # get hash without "#!"
 window.setHash = (hash)  -> window.location.hash = "!/#{hash}"          # set hash
 updateHash     = ()      -> window.setHash $('#emulsifiers').val()      # Update hash with entered data
