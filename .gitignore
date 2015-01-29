@@ -1,6 +1,7 @@
 *.log
 /.sass-cache
 /client/css
+/client/**/*.html
 /client/js
 /client/lib
 /client/vendor

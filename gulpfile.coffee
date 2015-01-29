@@ -39,7 +39,7 @@ gulp.task 'scripts', ->
 
 gulp.task 'jade', ->
   gulp.src 'src/client/jade/**/*.jade'
-    .pipe coffee()
+    .pipe jade()
     .on 'error', gutil.log
     .pipe gulp.dest 'client'
 
