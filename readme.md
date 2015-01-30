@@ -2,4 +2,4 @@
 
 [![Build Status](https://travis-ci.org/Stichoza/emul.ge.svg?branch=master)](https://travis-ci.org/Stichoza/emul.ge)
 
-Using [LoopBack](http://loopback.io) Framework.
+Project uses [LoopBack](http://loopback.io) Framework.
