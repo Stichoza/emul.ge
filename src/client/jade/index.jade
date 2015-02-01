@@ -21,6 +21,8 @@ html(lang='en')
       script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
       script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
   body
+
+    // Modals
     #modal-how-to-use.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
       .modal-dialog.modal-lg
         .modal-content
@@ -39,6 +41,22 @@ html(lang='en')
             <button type="button" class="btn btn-default" data-dismiss="modal">დახურვა</button>
             <button type="button" class="btn btn-primary">Save changes</button>
             </div>
+
+    #modal-___.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+      .modal-dialog.modal-lg
+        .modal-content
+          .modal-header
+            button.close(type='button', data-dismiss='modal')
+              span(aria-hidden='true') ×
+              span.sr-only დახურვა
+            h4#myModalLabel.modal-title
+              i.fa.fa-question-circle
+              |  სატესტო
+          .modal-body
+            p.text-justify
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+
     .navbar.navbar-static-top.navbar-inverse(role='navigation')
       .container
         .navbar-header
@@ -66,15 +84,15 @@ html(lang='en')
                 li
                   a(href='#', data-toggle='modal', data-target='#modal-how-to-use') როგორ გამოვიყენო?
                 li
-                  a(href='#') რა არის ემულგატორი?
+                  a(href='#', data-toggle='modal', data-target='#modal-___') რა არის ემულგატორი?
                 li
-                  a(href='#') Something else here
+                  a(href='#', data-toggle='modal', data-target='#modal-___') Something else here
                 li.divider
                 li.dropdown-header რამდენად სანდოა ინფორმაცია?
                 li
-                  a(href='#') Separated link
+                  a(href='#', data-toggle='modal', data-target='#modal-___') Separated link
                 li
-                  a(href='#') One more separated link
+                  a(href='#', data-toggle='modal', data-target='#modal-___') One more separated link
         // /.nav-collapse
     // Begin page content
     .container
@@ -144,22 +162,22 @@ html(lang='en')
                   i.fa.fa-ellipsis-h
                 ul.dropdown-menu(role='menu')
                   li
-                    a(href='#') Action
+                    a(href='#', data-toggle='modal', data-target='#modal-___') მოხმარების წესები
                   li
-                    a(href='#') Another action
+                    a(href='#', data-toggle='modal', data-target='#modal-___') წესები
                   li
-                    a(href='#') Something else here
+                    a(href='#', data-toggle='modal', data-target='#modal-___') მოხმარების წესები
                   li.divider
                   li.disabled.font-mtavruli.small
                     a © 2014 · საავტორო უფლებები დაცულია
             .hidden-xs.col-sm-4.text-center
               ul.hidden-xs.list-unstyled.list-inline.text-center.text-muted.font-mtavruli
                 li
-                  a(href='#') მოხმარების წესები
+                  a(href='#', data-toggle='modal', data-target='#modal-___') მოხმარების წესები
                 li
-                  a(href='#') წესები
+                  a(href='#', data-toggle='modal', data-target='#modal-___') წესები
                 li
-                  a(href='#') მოხმარების წესები
+                  a(href='#', data-toggle='modal', data-target='#modal-___') მოხმარების წესები
             .col-sm-4.col-xs-6.text-right
               p.text-muted.font-helvetica.font-thin
                 | Developed by
